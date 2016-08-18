@@ -1,0 +1,109 @@
+access:
+    token: 795c9f9a35d7494db7ce96f23bd322ae
+data:
+    awardCriteria: lowestCost
+    date: '2016-08-18T11:19:48.674929+03:00'
+    dateModified: '2016-08-18T11:19:48.678932+03:00'
+    description: Хвиґа жовтішати фик гудити шамшити блискавка дуранляси.
+    description_en: Omnis error sequi sit voluptate ex voluptatem rerum perspiciatis
+        quos minima expedita quia.
+    description_ru: Щуавятатэ жят рэгяонэ мёнём хёз квюандо ючю аппэтырэ декат шапэрэт.
+    enquiryPeriod:
+        endDate: '2016-08-18T11:39:45.051626+03:00'
+        startDate: '2016-08-18T11:19:45.051626+03:00'
+    id: 366715c131a143e5b211f6d95377cb25
+    items:
+    -   additionalClassifications:
+        -   description: Послуги щодо видавання газет
+            id: '58.13'
+            scheme: ДКПП
+        classification:
+            description: Газети, періодичні спеціалізовані та інші періодичні видання
+                і журнали
+            id: 22200000-2
+            scheme: CPV
+        deliveryAddress:
+            countryName: Україна
+            countryName_en: Ukraine
+            countryName_ru: Украина
+            locality: Дніпропетровськ
+            postalCode: '50064'
+            region: Дніпропетровська область
+            streetAddress: проспект Карла Маркса, 52
+        deliveryDate:
+            endDate: '2016-08-30T11:19:45.054308+03:00'
+        deliveryLocation:
+            latitude: 48.465356
+            longitude: 35.045667
+        description: 'i-a054fe0d: Періодичні видання оригінальні на 2016 рік (газети
+            України, журнали України, журнали Росії)'
+        description_en: Periodicals original in 2016 (Ukrainian newspapers, Ukrainian
+            magazines, Russian magazines)
+        description_ru: Периодические издания оригинала в 2016 году (газет Украина,
+            журналов Украины, журналов  России)
+        id: a6eca00aac5b4e7fb0e14cf27b5f77f0
+        quantity: 139
+        relatedLot: 2b49afa49b1d4359b13fb354ff7bf91c
+        unit:
+            code: H87
+            name: штуки
+    lots:
+    -   date: '2016-08-18T11:19:48.674929+03:00'
+        description: Змерлий віявки дзюбнути пообскрібати корчити попутник зчарувати
+            притягати обчірати зближати.
+        id: 2b49afa49b1d4359b13fb354ff7bf91c
+        minimalStep:
+            amount: 203851945.91
+            currency: UAH
+            valueAddedTaxIncluded: true
+        status: active
+        title: 'l-e8149d72: Почеркати виголос покволом покропити.'
+        value:
+            amount: 6815355492.73
+            currency: UAH
+            valueAddedTaxIncluded: true
+    minimalStep:
+        amount: 203851945.91
+        currency: UAH
+        valueAddedTaxIncluded: true
+    mode: test
+    next_check: '2016-08-18T11:39:45.051626+03:00'
+    owner: test.quintagroup.com
+    procurementMethod: open
+    procurementMethodDetails: quick, accelerator=1440
+    procurementMethodType: belowThreshold
+    procuringEntity:
+        address:
+            countryName: Україна
+            locality: Київ
+            postalCode: '01032'
+            region: місто Київ
+            streetAddress: вулиця Назарівська, 98, 23
+        contactPoint:
+            email: chevchcrp@ukr.net
+            faxNumber: 482-06-85
+            name: Савенко Наталія Іванівна
+            telephone: 235-23-87
+            url: http://www.kievcity.gov.ua
+        identifier:
+            id: '38947811'
+            legalName: Комунальне некомерційне підприємство "Консультативно-діагностичний
+                центр" Шевченківського району міста Києва
+            scheme: UA-EDR
+        kind: other
+        name: Комунальне некомерційне підприємство "Консультативно-діагностичний центр"
+            Шевченківського району міста Києва
+    status: active.enquiries
+    submissionMethod: electronicAuction
+    submissionMethodDetails: quick
+    tenderID: UA-2016-08-18-000118
+    tenderPeriod:
+        endDate: '2016-08-18T11:59:45.051626+03:00'
+        startDate: '2016-08-18T11:39:45.051626+03:00'
+    title: '[ТЕСТУВАННЯ] Відмащувати пороспорюватися вивагом рдитися можновладник.'
+    title_en: '[TESTING] Fully-configurable 3rdgeneration data-warehouse'
+    title_ru: '[ТЕСТИРОВАНИЕ] Compatible stable Graphic Interface'
+    value:
+        amount: 6815355492.73
+        currency: UAH
+        valueAddedTaxIncluded: true

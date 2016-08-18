@@ -1,0 +1,104 @@
+access:
+    token: 3053a849522d4a97803f682505291d92
+data:
+    awardCriteria: lowestCost
+    date: '2016-08-17T15:45:17.227514+03:00'
+    dateModified: '2016-08-17T15:45:17.232237+03:00'
+    description: Відчалювати непорадний уректи усподі звідси гаїна грун скандзюбити
+        постоячка узавтра ураз II попівський драгун.
+    description_en: Culpa quia qui ea molestias laborum voluptatem.
+    description_ru: Граэки атквюе опортэры магна факэр молыжтйаы ажжынтиор констятюам
+        дыфяниэбаж аккузата хаж магна констятюам пхйложопхяа.
+    enquiryPeriod:
+        endDate: '2016-08-17T16:05:12.678591+03:00'
+        startDate: '2016-08-17T15:45:12.678591+03:00'
+    id: 6cbfdda8a84b4a60a07c11be26653814
+    items:
+    -   additionalClassifications:
+        -   description: Журнали та періодичні видання, друковані, інші
+            id: 58.14.19-0.00
+            scheme: ДКПП
+        classification:
+            description: Періодичні видання
+            id: 22212000-9
+            scheme: CPV
+        deliveryAddress:
+            countryName: Україна
+            countryName_en: Ukraine
+            countryName_ru: Украина
+            locality: Ворзель
+            postalCode: 08296
+            region: Київська область
+            streetAddress: вулиця Курортна, 22
+        deliveryDate:
+            endDate: '2016-09-04T15:45:12.680835+03:00'
+        deliveryLocation:
+            latitude: 50.537702
+            longitude: 30.174488
+        description: 'i-c3cc5b08: Додаток № 1 до документації'
+        description_en: 'Supplement # 1 to documentation'
+        description_ru: Приложение № 1 к документации
+        id: 4c9dc0e536964542af8f6876c30fd2be
+        quantity: 11
+        relatedLot: aced0cbc3f58480d91df5a80ec78f456
+        unit:
+            code: SET
+            name: набір
+    lots:
+    -   date: '2016-08-17T15:45:17.227514+03:00'
+        description: Повиводити хльорка уміцняти дешперувати прихапцем перестрах рострясти
+            десяточок осмолювати.
+        id: aced0cbc3f58480d91df5a80ec78f456
+        minimalStep:
+            amount: 217292032.38
+            currency: UAH
+            valueAddedTaxIncluded: true
+        status: active
+        title: 'l-44236af8: Виголос вісімка шахрайський.'
+        value:
+            amount: 7843871870.47
+            currency: UAH
+            valueAddedTaxIncluded: true
+    minimalStep:
+        amount: 217292032.38
+        currency: UAH
+        valueAddedTaxIncluded: true
+    mode: test
+    next_check: '2016-08-17T16:05:12.678591+03:00'
+    owner: test.quintagroup.com
+    procurementMethod: open
+    procurementMethodDetails: quick, accelerator=1440
+    procurementMethodType: belowThreshold
+    procuringEntity:
+        address:
+            countryName: Україна
+            locality: Київ
+            postalCode: '03150'
+            region: місто Київ
+            streetAddress: вулиця Івана Федорова, 9, 5А
+        contactPoint:
+            email: pcenter_ekonomist@ukr.net
+            faxNumber: '5228745'
+            name: Пуніна Ірина Пилипівна
+            telephone: '5228755'
+            url: http://www.pcenter.org.ua
+        identifier:
+            id: '22964365'
+            legalName: Перинатальний центр м.Києва
+            scheme: UA-EDR
+        kind: other
+        name: Перинатальний центр м.Києва
+    status: active.enquiries
+    submissionMethod: electronicAuction
+    submissionMethodDetails: quick
+    tenderID: UA-2016-08-17-000126-2
+    tenderPeriod:
+        endDate: '2016-08-17T16:25:12.678591+03:00'
+        startDate: '2016-08-17T16:05:12.678591+03:00'
+    title: '[ТЕСТУВАННЯ] Підрийка кованка любомудр висмівати.'
+    title_en: '[TESTING] Fundamental analyzing focus group'
+    title_ru: '[ТЕСТИРОВАНИЕ] Ergonomic interactive synergy'
+    value:
+        amount: 7843871870.47
+        currency: UAH
+        valueAddedTaxIncluded: true

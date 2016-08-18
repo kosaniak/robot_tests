@@ -50,6 +50,8 @@ import re
 
 NUM_TYPES = (int, long, float)
 
+positions = [(0, 0), (960, 0), (0, 540), (960, 540)]
+size = (960, 1000)
 
 def get_current_tzdate():
     return get_now().strftime('%Y-%m-%d %H:%M:%S.%f')

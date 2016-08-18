@@ -1,0 +1,110 @@
+access:
+    token: b44d2125ea7e4b48b0fa4c443ccdd5f6
+data:
+    awardCriteria: lowestCost
+    date: '2016-08-18T11:42:38.155078+03:00'
+    dateModified: '2016-08-18T11:42:38.173729+03:00'
+    description: Чепурити здирати дривотень бердник вихрюватий облагодити подружка
+        очевидьки повіджимати облудність.
+    description_en: Nihil ad sunt voluptatum architecto enim vitae molestias est aut
+        aut optio cum sed.
+    description_ru: Пхйложопхяа квюоджёныглэгэнтур нык граэко кюм кевёбюж тота одео
+        льаборэж ылоквюэнтиам либриз.
+    enquiryPeriod:
+        endDate: '2016-08-18T12:02:34.511414+03:00'
+        startDate: '2016-08-18T11:42:34.511414+03:00'
+    id: e1e6afdd55514deaa7cd1a4af5a271b4
+    items:
+    -   additionalClassifications:
+        -   description: Журнали реєстраційні, бухгалтерські книги, швидкозшивачі,
+                формуляри та інші канцелярські вироби, паперові чи картонні
+            id: 17.23.13
+            scheme: ДКПП
+        classification:
+            description: Паперові чи картонні реєстраційні журнали, бухгалтерські
+                книги, швидкозшивачі, бланки та інші паперові канцелярські вироби
+            id: 22800000-8
+            scheme: CPV
+        deliveryAddress:
+            countryName: Україна
+            countryName_en: Ukraine
+            countryName_ru: Украина
+            locality: Дніпропетровськ
+            postalCode: '50064'
+            region: Дніпропетровська область
+            streetAddress: проспект Карла Маркса, 52
+        deliveryDate:
+            endDate: '2016-09-14T11:42:34.513777+03:00'
+        deliveryLocation:
+            latitude: 48.465356
+            longitude: 35.045667
+        description: 'i-aa6b1692: Бланки та журнали відповідної форми (наведені в
+            додатку)'
+        description_en: Form and journals in appropriate form (listed in Annex)
+        description_ru: Бланки и журналы соответствующей формы (приведены в приложении)
+        id: 8a10c31977034948abcd913ecc92e642
+        quantity: 7
+        relatedLot: 7d4fe4407c744655926ec2423dddcf3b
+        unit:
+            code: LO
+            name: лот
+    lots:
+    -   date: '2016-08-18T11:42:38.155078+03:00'
+        description: Переріз дерновий стереження фарфур печерувати люб'ячий дривотень
+            осмолювати цибульний.
+        id: 7d4fe4407c744655926ec2423dddcf3b
+        minimalStep:
+            amount: 111155021.35
+            currency: UAH
+            valueAddedTaxIncluded: true
+        status: active
+        title: 'l-cc452f08: Викликати 1 перемовляти слюзувати призначати.'
+        value:
+            amount: 5978523139.01
+            currency: UAH
+            valueAddedTaxIncluded: true
+    minimalStep:
+        amount: 111155021.35
+        currency: UAH
+        valueAddedTaxIncluded: true
+    mode: test
+    next_check: '2016-08-18T12:02:34.511414+03:00'
+    owner: test.quintagroup.com
+    procurementMethod: open
+    procurementMethodDetails: quick, accelerator=1440
+    procurementMethodType: belowThreshold
+    procuringEntity:
+        address:
+            countryName: Україна
+            locality: Канів
+            postalCode: '19003'
+            region: Черкаська
+            streetAddress: Леніна, 60
+        contactPoint:
+            email: kanvo@ukr.net
+            faxNumber: 0473632384
+            name: П'яткова Оксана Дмитрівна
+            telephone: '0473632433'
+            url: http://osvita.kaniv.info
+        identifier:
+            id: '02147115'
+            legalName: Відділ освіти Канівської районної державної адміністрації Черкаської
+                області
+            scheme: UA-EDR
+        kind: other
+        name: Відділ освіти Канівської районної державної адміністрації Черкаської
+            області
+    status: active.enquiries
+    submissionMethod: electronicAuction
+    submissionMethodDetails: quick
+    tenderID: UA-2016-08-18-000130
+    tenderPeriod:
+        endDate: '2016-08-18T12:22:34.511414+03:00'
+        startDate: '2016-08-18T12:02:34.511414+03:00'
+    title: '[ТЕСТУВАННЯ] Обдарити курча замискрити присилити слідити.'
+    title_en: '[TESTING] Proactive analyzing methodology'
+    title_ru: '[ТЕСТИРОВАНИЕ] Up-sized multi-tasking task-force'
+    value:
+        amount: 5978523139.01
+        currency: UAH
+        valueAddedTaxIncluded: true

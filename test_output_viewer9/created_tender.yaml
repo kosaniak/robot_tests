@@ -1,0 +1,108 @@
+access:
+    token: adc2303f488245108ac3dab4813a0a1a
+data:
+    awardCriteria: lowestCost
+    date: '2016-08-17T10:23:45.601912+03:00'
+    dateModified: '2016-08-17T10:23:45.605867+03:00'
+    description: Компанійський приймачка ночний тараракання обаринок перевалити ревучий
+        скандзюбити узголов'я виґуляри вилічка оздобний соненько вихрюватий.
+    description_en: Quia est et adipisci unde enim fugiat dolor quis est.
+    description_ru: Адмодум омнэжквюы зэнтынтиаэ игнота ывыртятюр вирйз майыжтатйж.
+    enquiryPeriod:
+        endDate: '2016-08-17T10:33:39.541603+03:00'
+        startDate: '2016-08-17T10:23:39.541603+03:00'
+    id: 3efd880e8b5f46149ec1416dd011c1ce
+    items:
+    -   additionalClassifications:
+        -   description: Журнали реєстраційні, бухгалтерські книги, швидкозшивачі,
+                формуляри та інші канцелярські вироби, паперові чи картонні
+            id: 17.23.13
+            scheme: ДКПП
+        classification:
+            description: Паперові чи картонні реєстраційні журнали, бухгалтерські
+                книги, швидкозшивачі, бланки та інші паперові канцелярські вироби
+            id: 22800000-8
+            scheme: CPV
+        deliveryAddress:
+            countryName: Україна
+            countryName_en: Ukraine
+            countryName_ru: Украина
+            locality: Вишгород
+            postalCode: '03057'
+            region: Київська область
+            streetAddress: вулиця Максимовича, 2, 4
+        deliveryDate:
+            endDate: '2016-08-23T10:23:39.544009+03:00'
+        deliveryLocation:
+            latitude: 50.57565839999999
+            longitude: 30.4816951
+        description: 'i-e52219cb: Бланки та журнали відповідної форми (наведені в
+            додатку)'
+        description_en: Form and journals in appropriate form (listed in Annex)
+        description_ru: Бланки и журналы соответствующей формы (приведены в приложении)
+        id: 62ddb61e8b3c4f88b1e2202751fa2de3
+        quantity: 6
+        relatedLot: fd05206d547041fba5590de92f877699
+        unit:
+            code: LO
+            name: лот
+    lots:
+    -   date: '2016-08-17T10:23:45.601912+03:00'
+        description: Руненце здирати приспа відом уміцняти повирячувати шахрайський
+            кантурь накотити I морща зніматися зчарувати.
+        id: fd05206d547041fba5590de92f877699
+        minimalStep:
+            amount: 1105420989.97
+            currency: UAH
+            valueAddedTaxIncluded: true
+        status: active
+        title: 'l-59ace2a1: Ошаліти варівний звишки.'
+        value:
+            amount: 44519067546.38
+            currency: UAH
+            valueAddedTaxIncluded: true
+    minimalStep:
+        amount: 1105420989.97
+        currency: UAH
+        valueAddedTaxIncluded: true
+    mode: test
+    next_check: '2016-08-17T10:33:39.541603+03:00'
+    owner: test.quintagroup.com
+    procurementMethod: open
+    procurementMethodDetails: quick, accelerator=1440
+    procurementMethodType: belowThreshold
+    procuringEntity:
+        address:
+            countryName: Україна
+            locality: Київ
+            postalCode: 03680
+            region: місто Київ
+            streetAddress: проспект Перемоги, 54/1
+        contactPoint:
+            email: tender01@kneu.kiev.ua
+            faxNumber: 371-61-72
+            name: Узунов Лев Олександрович
+            telephone: 456-12-01
+            url: http://kneu.edu.ua/
+        identifier:
+            id: 02070884
+            legalName: Державний вищий навчальний заклад " Київський національний
+                економічний університет імені Вадима Гетьмана"
+            scheme: UA-EDR
+        kind: other
+        name: Державний вищий навчальний заклад " Київський національний економічний
+            університет імені Вадима Гетьмана"
+    status: active.enquiries
+    submissionMethod: electronicAuction
+    submissionMethodDetails: quick
+    tenderID: UA-2016-08-17-000044
+    tenderPeriod:
+        endDate: '2016-08-17T10:43:39.541603+03:00'
+        startDate: '2016-08-17T10:33:39.541603+03:00'
+    title: '[ТЕСТУВАННЯ] Гаїр солодятко опадати.'
+    title_en: '[TESTING] Versatile upward-trending parallelism'
+    title_ru: '[ТЕСТИРОВАНИЕ] Up-sized optimizing solution'
+    value:
+        amount: 44519067546.38
+        currency: UAH
+        valueAddedTaxIncluded: true

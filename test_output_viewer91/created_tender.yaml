@@ -1,0 +1,109 @@
+access:
+    token: d3a668f533ab43c7a5186c9b68546577
+data:
+    awardCriteria: lowestCost
+    date: '2016-08-17T11:47:09.014121+03:00'
+    dateModified: '2016-08-17T11:47:09.028727+03:00'
+    description: Бродити таляровий дрова начутися підсмажувати попороскошувати заґавитися
+        пропищати знахарювати подружка зніматися.
+    description_en: Voluptas repellat odio accusantium molestiae qui quo dignissimos
+        at.
+    description_ru: Еюж квюоджё эож квуым квюоджё эпикюре жят алььтыра атквюе пхйложопхяа
+        но интылльэгэбат пэр.
+    enquiryPeriod:
+        endDate: '2016-08-17T11:59:04.513567+03:00'
+        startDate: '2016-08-17T11:47:04.513567+03:00'
+    id: fc6699cc8cee4e15bf21f6d1e2198d53
+    items:
+    -   additionalClassifications:
+        -   description: Журнали реєстраційні, бухгалтерські книги, швидкозшивачі,
+                формуляри та інші канцелярські вироби, паперові чи картонні
+            id: 17.23.13
+            scheme: ДКПП
+        classification:
+            description: Паперові чи картонні реєстраційні журнали, бухгалтерські
+                книги, швидкозшивачі, бланки та інші паперові канцелярські вироби
+            id: 22800000-8
+            scheme: CPV
+        deliveryAddress:
+            countryName: Україна
+            countryName_en: Ukraine
+            countryName_ru: Украина
+            locality: Київ
+            postalCode: '01030'
+            region: місто Київ
+            streetAddress: бульвар Тараса Шевченка, 17
+        deliveryDate:
+            endDate: '2016-08-25T11:47:04.516061+03:00'
+        deliveryLocation:
+            latitude: 50.443563
+            longitude: 30.509402
+        description: 'i-a8750e88: Бланки та журнали відповідної форми (наведені в
+            додатку)'
+        description_en: Form and journals in appropriate form (listed in Annex)
+        description_ru: Бланки и журналы соответствующей формы (приведены в приложении)
+        id: 85a9fcf95929460db21cd862c484edb2
+        quantity: 6
+        relatedLot: 61c504fc27cf4f9e89ea8cd9d2a800eb
+        unit:
+            code: LO
+            name: лот
+    lots:
+    -   date: '2016-08-17T11:47:09.014121+03:00'
+        description: Курча знахарювати драгун гаїна варило весілчанин тудою.
+        id: 61c504fc27cf4f9e89ea8cd9d2a800eb
+        minimalStep:
+            amount: 277112255.81
+            currency: UAH
+            valueAddedTaxIncluded: true
+        status: active
+        title: 'l-311e5268: Пооблапувати прогреміти суддя струпливий.'
+        value:
+            amount: 9820201597.12
+            currency: UAH
+            valueAddedTaxIncluded: true
+    minimalStep:
+        amount: 277112255.81
+        currency: UAH
+        valueAddedTaxIncluded: true
+    mode: test
+    next_check: '2016-08-17T11:59:04.513567+03:00'
+    owner: test.quintagroup.com
+    procurementMethod: open
+    procurementMethodDetails: quick, accelerator=1440
+    procurementMethodType: belowThreshold
+    procuringEntity:
+        address:
+            countryName: Україна
+            locality: Київ
+            postalCode: '01004'
+            region: місто Київ
+            streetAddress: Крутий узвіз, 1/2, 2/1
+        contactPoint:
+            email: buhkapela@ukr.net
+            faxNumber: '0442346071'
+            name: Литвин Наталія Миколаївна
+            telephone: '0442346071'
+            url: http://dk.kievcity.gov.ua
+        identifier:
+            id: 02226079
+            legalName: '"Концертний заклад культури "Муніципальна академічна чоловіча
+                хорова капела ім. Л.М. Ревуцького"'
+            scheme: UA-EDR
+        kind: other
+        name: '"Концертний заклад культури "Муніципальна академічна чоловіча хорова
+            капела ім. Л.М. Ревуцького"'
+    status: active.enquiries
+    submissionMethod: electronicAuction
+    submissionMethodDetails: quick
+    tenderID: UA-2016-08-17-000049-2
+    tenderPeriod:
+        endDate: '2016-08-17T12:11:04.513567+03:00'
+        startDate: '2016-08-17T11:59:04.513567+03:00'
+    title: '[ТЕСТУВАННЯ] Самоук підстолини покоїтися лементіти кикати.'
+    title_en: '[TESTING] Polarized bandwidth-monitored concept'
+    title_ru: '[ТЕСТИРОВАНИЕ] Networked asymmetric workforce'
+    value:
+        amount: 9820201597.12
+        currency: UAH
+        valueAddedTaxIncluded: true

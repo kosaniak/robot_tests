@@ -1,0 +1,108 @@
+access:
+    token: b2b15e0d9366452686b104bcfd818cb4
+data:
+    awardCriteria: lowestCost
+    date: '2016-08-18T11:56:49.066081+03:00'
+    dateModified: '2016-08-18T11:56:49.077598+03:00'
+    description: Очевидьки нечесаний вимірювати повислужувати замискрити облізок проплинути
+        здирати лихота приторжити познакомитися уміцняти подружка рахубно.
+    description_en: Possimus ipsum quam sint qui aliquam mollitia doloribus aut.
+    description_ru: Игнота мёнём оффекйяж глориатюр торквюатоз антеопам адипижкй лэгыры
+        прима.
+    enquiryPeriod:
+        endDate: '2016-08-18T12:16:45.662620+03:00'
+        startDate: '2016-08-18T11:56:45.662620+03:00'
+    id: 0336543d6e0f4e82a846507fd4cc1b08
+    items:
+    -   additionalClassifications:
+        -   description: Олівці прості та кольорові, з грифелями у твердій оболонці
+                (крім олівців для медичних, косметичних або гігієнічних цілей)
+            id: 32.99.15-10.00
+            scheme: ДКПП
+        classification:
+            description: Олівці
+            id: 30192130-1
+            scheme: CPV
+        deliveryAddress:
+            countryName: Україна
+            countryName_en: Ukraine
+            countryName_ru: Украина
+            locality: Ворзель
+            postalCode: 08296
+            region: Київська область
+            streetAddress: вулиця Курортна, 22
+        deliveryDate:
+            endDate: '2016-09-11T11:56:45.665978+03:00'
+        deliveryLocation:
+            latitude: 50.537702
+            longitude: 30.174488
+        description: 'i-86dff327: Олівці прості'
+        description_en: Plain pencils
+        description_ru: Карандаши простые
+        id: ee10a780b08e4dadaf270a1e93ae0e77
+        quantity: 3
+        relatedLot: 1311fdd80b04461eae63692bcf1b39eb
+        unit:
+            code: PK
+            name: упаковка
+    lots:
+    -   date: '2016-08-18T11:56:49.066081+03:00'
+        description: Чужоземець облудність попороскошувати вадко справність цибульний
+            потіпаха гривенний.
+        id: 1311fdd80b04461eae63692bcf1b39eb
+        minimalStep:
+            amount: 357706923.33
+            currency: UAH
+            valueAddedTaxIncluded: true
+        status: active
+        title: 'l-3968606d: Протьохкати осмолювати лементіти.'
+        value:
+            amount: 23332355793.29
+            currency: UAH
+            valueAddedTaxIncluded: true
+    minimalStep:
+        amount: 357706923.33
+        currency: UAH
+        valueAddedTaxIncluded: true
+    mode: test
+    next_check: '2016-08-18T12:16:45.662620+03:00'
+    owner: test.quintagroup.com
+    procurementMethod: open
+    procurementMethodDetails: quick, accelerator=1440
+    procurementMethodType: belowThreshold
+    procuringEntity:
+        address:
+            countryName: Україна
+            locality: Миколаїв
+            postalCode: '54017'
+            region: Миколаївська область
+            streetAddress: вулиця Лягіна, 26
+        contactPoint:
+            email: kryukovsky@delta-pilot.ua
+            faxNumber: '0512501162'
+            name: Філія "Дельта-лоцман" державного підприємства "Адміністрація морських
+                портів України"
+            telephone: '0512501151'
+            url: http://www.delta-pilot.ua/
+        identifier:
+            id: '38728507'
+            legalName: Філія "Дельта-лоцман" державного підприємства "Адміністрація
+                морських портів України"
+            scheme: UA-EDR
+        kind: other
+        name: Філія "Дельта-лоцман" державного підприємства "Адміністрація морських
+            портів України"
+    status: active.enquiries
+    submissionMethod: electronicAuction
+    submissionMethodDetails: quick
+    tenderID: UA-2016-08-18-000144
+    tenderPeriod:
+        endDate: '2016-08-18T12:36:45.662620+03:00'
+        startDate: '2016-08-18T12:16:45.662620+03:00'
+    title: '[ТЕСТУВАННЯ] Фарфур клаптик удень покропити.'
+    title_en: '[TESTING] Quality-focused transitional emulation'
+    title_ru: '[ТЕСТИРОВАНИЕ] Inverse disintermediate instruction set'
+    value:
+        amount: 23332355793.29
+        currency: UAH
+        valueAddedTaxIncluded: true
