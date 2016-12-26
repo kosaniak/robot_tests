@@ -403,11 +403,10 @@ def wait_and_write_to_console(date):
     time = wait_to_date(date)
     if time > 0:
         minutes, seconds = divmod(time, 60)
-        for number in range(int(minutes)):
+        for number in xrange(int(minutes)):
             sleep(60)
             print('.')
         sleep(seconds)
-    return time
 
 
 def merge_dicts(a, b):
