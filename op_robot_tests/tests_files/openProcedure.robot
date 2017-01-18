@@ -45,7 +45,7 @@ ${ITEM_MEAT}        ${True}
   ...      ${USERS.users['${viewer}'].broker}
   ...      tender_view  level1
   [Setup]  Дочекатись синхронізації з майданчиком  ${viewer}
-  Звірити відображення поля title тендера для користувача ${viewer}
+  Звірити відображення поля title_en тендера для користувача ${viewer}
 
 
 Відображення опису тендера
@@ -255,30 +255,6 @@ ${ITEM_MEAT}        ${True}
   ...      ${USERS.users['${viewer}'].broker}
   ...      tender_view  level2
   Звірити відображення поля classification.description усіх предметів для користувача ${viewer}
-
-
-Відображення схеми додаткової класифікації номенклатур тендера
-  [Tags]   ${USERS.users['${viewer}'].broker}: Відображення номенклатури тендера
-  ...      viewer
-  ...      ${USERS.users['${viewer}'].broker}
-  ...      tender_view
-  Звірити відображення поля additionalClassifications[0].scheme усіх предметів для користувача ${viewer}
-
-
-Відображення ідентифікатора додаткової класифікації номенклатур тендера
-  [Tags]   ${USERS.users['${viewer}'].broker}: Відображення номенклатури тендера
-  ...      viewer
-  ...      ${USERS.users['${viewer}'].broker}
-  ...      tender_view  level2
-  Звірити відображення поля additionalClassifications[0].id усіх предметів для користувача ${viewer}
-
-
-Відображення опису додаткової класифікації номенклатур тендера
-  [Tags]   ${USERS.users['${viewer}'].broker}: Відображення номенклатури тендера
-  ...      viewer
-  ...      ${USERS.users['${viewer}'].broker}
-  ...      tender_view  level2
-  Звірити відображення поля additionalClassifications[0].description усіх предметів для користувача ${viewer}
 
 
 Відображення назви одиниці номенклатур тендера

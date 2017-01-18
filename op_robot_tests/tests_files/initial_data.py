@@ -33,15 +33,15 @@ def field_with_id(prefix, sentence):
 
 
 def translate_country_en(country):
-    if country == u"Україна":
-        return "Ukraine"
+    if country == u"Republica Moldova":
+        return "Republica Moldova"
     else:
         raise Exception(u"Cannot translate country to english: {}".format(country))
 
 
 def translate_country_ru(country):
-    if country == u"Україна":
-        return u"Украина"
+    if country == u"Republica Moldova":
+        return u"Republica Moldova"
     else:
         raise Exception(u"Cannot translate country to russian: {}".format(country))
 
@@ -64,19 +64,18 @@ def test_tender_data(params, periods=("enquiry", "tender")):
         "submissionMethodDetails": "quick",
         "description": fake.description(),
         "description_en": fake_en.sentence(nb_words=10, variable_nb_words=True),
-        "description_ru": fake_ru.sentence(nb_words=10, variable_nb_words=True),
         "title": fake.title(),
         "title_en": fake_en.catch_phrase(),
-        "title_ru": fake_ru.catch_phrase(),
         "procuringEntity": fake.procuringEntity(),
         "value": {
             "amount": value_amount,
-            "currency": u"UAH",
-            "valueAddedTaxIncluded": True
+            "currency": u"MDL",
+            "valueAddedTaxIncluded": False
         },
         "minimalStep": {
             "amount": round(random.uniform(0.005, 0.03) * value_amount, 2),
-            "currency": u"UAH"
+            "currency": u"MDL",
+            "valueAddedTaxIncluded": False
         },
         "items": [],
         "features": []
@@ -86,9 +85,7 @@ def test_tender_data(params, periods=("enquiry", "tender")):
         'accelerator={}'.format(accelerator)
     data["procuringEntity"]["kind"] = "other"
     if data.get("mode") == "test":
-        data["title"] = u"[ТЕСТУВАННЯ] {}".format(data["title"])
         data["title_en"] = u"[TESTING] {}".format(data["title_en"])
-        data["title_ru"] = u"[ТЕСТИРОВАНИЕ] {}".format(data["title_ru"])
     period_dict = {}
     inc_dt = now
     for period_name in periods:
@@ -175,7 +172,6 @@ def test_feature_data():
         "code": uuid4().hex,
         "title": field_with_id("f", fake.title()),
         "title_en": field_with_id('f', fake_en.sentence(nb_words=5, variable_nb_words=True)),
-        "title_ru": field_with_id('f', fake_ru.sentence(nb_words=5, variable_nb_words=True)),
         "description": fake.description(),
         "enum": [
             {
@@ -277,7 +273,6 @@ def test_bid_data():
         }
     })
     bid.data.tenderers[0].address.countryName_en = translate_country_en(bid.data.tenderers[0].address.countryName)
-    bid.data.tenderers[0].address.countryName_ru = translate_country_ru(bid.data.tenderers[0].address.countryName)
     bid.data['status'] = 'draft'
     return bid
 
@@ -285,9 +280,9 @@ def test_bid_data():
 def test_bid_value(max_value_amount):
     return munchify({
         "value": {
-            "currency": "UAH",
+            "currency": "MDL",
             "amount": round(random.uniform(1, max_value_amount), 2),
-            "valueAddedTaxIncluded": True
+            "valueAddedTaxIncluded": False
         }
     })
 
@@ -300,8 +295,8 @@ def test_supplier_data():
             ],
             "value": {
                 "amount": fake.random_int(min=1),
-                "currency": "UAH",
-                "valueAddedTaxIncluded": True
+                "currency": "MDL",
+                "valueAddedTaxIncluded": False 
             },
             "qualified": True
         }
@@ -312,14 +307,12 @@ def test_item_data(cpv=None):
     data = fake.fake_item(cpv)
     data["description"] = field_with_id("i", data["description"])
     data["description_en"] = field_with_id("i", data["description_en"])
-    data["description_ru"] = field_with_id("i", data["description_ru"])
     days = fake.random_int(min=1, max=30)
     data["deliveryDate"] = {
                             "startDate":(get_now() + timedelta(days=days)).isoformat(),
                             "endDate":(get_now() + timedelta(days=days)).isoformat()
                            }
     data["deliveryAddress"]["countryName_en"] = translate_country_en(data["deliveryAddress"]["countryName"])
-    data["deliveryAddress"]["countryName_ru"] = translate_country_ru(data["deliveryAddress"]["countryName"])
     return munchify(data)
 
 
@@ -351,16 +344,15 @@ def test_lot_data(max_value_amount):
             "description": fake.description(),
             "title": field_with_id('l', fake.title()),
             "title_en": field_with_id('l', fake_en.sentence(nb_words=5, variable_nb_words=True)),
-            "title_ru": field_with_id('l', fake_ru.sentence(nb_words=5, variable_nb_words=True)),
             "value": {
-                "currency": "UAH",
+                "currency": "MDL",
                 "amount": value_amount,
-                "valueAddedTaxIncluded": True
+                "valueAddedTaxIncluded": False
             },
             "minimalStep": {
-                "currency": "UAH",
+                "currency": "MDL",
                 "amount": round(random.uniform(0.005, 0.03) * value_amount, 2),
-                "valueAddedTaxIncluded": True
+                "valueAddedTaxIncluded": False
             },
             "status": "active"
         })
