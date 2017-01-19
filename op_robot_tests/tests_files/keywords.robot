@@ -596,12 +596,6 @@ Require Failure
   [return]  ${value}
 
 
-Дочекатись дати
-  [Arguments]  ${date}
-  ${sleep}=  wait_to_date  ${date}
-  Run Keyword If  ${sleep} > 0  Sleep  ${sleep}
-
-
 Дочекатись дати початку періоду уточнень
   [Arguments]  ${username}  ${tender_uaid}
   # XXX: HACK: Same as below
@@ -612,7 +606,7 @@ Require Failure
   ...      '${status}' == 'FAIL'
   ...      ${USERS.users['${tender_owner}'].initial_data.data.enquiryPeriod.startDate}
   ...      ${date}
-  Дочекатись дати  ${date}
+  wait_and_write_to_console  ${date}
   Оновити LAST_MODIFICATION_DATE
   Дочекатись синхронізації з майданчиком  ${username}
   ${next_status}=  Set variable if  'open' in '${MODE}'  active.tendering  active.enquiries
@@ -656,7 +650,7 @@ Require Failure
   ...      '${status}' == 'FAIL'
   ...      ${USERS.users['${tender_owner}'].initial_data.data.tenderPeriod.startDate}
   ...      ${date}
-  Дочекатись дати  ${date}
+  wait_and_write_to_console  ${date}
   Оновити LAST_MODIFICATION_DATE
   Дочекатись синхронізації з майданчиком  ${username}
   Wait until keyword succeeds
@@ -678,7 +672,7 @@ Require Failure
   ...      '${status}' == 'FAIL'
   ...      ${USERS.users['${tender_owner}'].initial_data.data.tenderPeriod.endDate}
   ...      ${date}
-  Дочекатись дати  ${date}
+  wait_and_write_to_console  ${date}
   Оновити LAST_MODIFICATION_DATE
   Дочекатись синхронізації з майданчиком  ${username}
   Wait until keyword succeeds
@@ -701,7 +695,7 @@ Require Failure
   ...      '${status}' == 'FAIL'
   ...      ${USERS.users['${tender_owner}'].initial_data.data.tenderPeriod.endDate}
   ...      ${date}
-  Дочекатись дати  ${date}
+  wait_and_write_to_console  ${date}
   Оновити LAST_MODIFICATION_DATE
   Дочекатись синхронізації з майданчиком  ${username}
   Wait until keyword succeeds
@@ -723,7 +717,7 @@ Require Failure
   ...      '${status}' == 'FAIL'
   ...      ${USERS.users['${tender_owner}'].initial_data.data.tenderPeriod.endDate}
   ...      ${date}
-  Дочекатись дати  ${date}
+  wait_and_write_to_console  ${date}
   Оновити LAST_MODIFICATION_DATE
   Дочекатись синхронізації з майданчиком  ${username}
   Wait until keyword succeeds
@@ -737,7 +731,7 @@ Require Failure
 
 Дочекатись дати закінчення періоду прекваліфікації
   [Arguments]  ${username}  ${tender_uaid}
-  Дочекатись дати  ${USERS.users['${username}'].tender_data.data.qualificationPeriod.endDate}
+  wait_and_write_to_console  ${USERS.users['${username}'].tender_data.data.qualificationPeriod.endDate}
   Оновити LAST_MODIFICATION_DATE
   Дочекатись синхронізації з майданчиком  ${username}
   Wait until keyword succeeds
@@ -779,7 +773,7 @@ Require Failure
 
 Дочекатись дати закінчення періоду подання скарг
   [Arguments]  ${username}
-  Дочекатись дати  ${USERS.users['${username}'].tender_data.data.complaintPeriod.endDate}
+  wait_and_write_to_console  ${USERS.users['${username}'].tender_data.data.complaintPeriod.endDate}
   Оновити LAST_MODIFICATION_DATE
   Дочекатись синхронізації з майданчиком  ${username}
 
