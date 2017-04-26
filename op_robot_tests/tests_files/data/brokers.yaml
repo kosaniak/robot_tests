@@ -46,8 +46,8 @@ Default:
 Quinta:
     intervals:
         default:
-            enquiry: [0, 15]
-            tender:  [0, 15]
+            enquiry: [0, 20]
+            tender:  [0, 20]
         openua:
             tender:  [1, 30]
         openeu:
@@ -63,17 +63,17 @@ Quinta:
         tender_owner:   Tender_Owner
         viewer:         Tender_Viewer
     timeout_on_wait: 15
-E-tender:
+Etender:
     intervals:
         default:
             enquiry: [0, 5]
     keywords_file: etender
     roles:
-        provider:       E-tender_Provider1
-        provider1:      E-tender_Provider2
-        tender_owner:   E-tender_Owner
-        viewer:         E-tender_Viewer
-    timeout_on_wait: 600
+        provider:       Etender_Provider1
+        provider1:      Etender_Provider2
+        tender_owner:   Etender_Owner
+        viewer:         Etender_Viewer
+    timeout_on_wait: 60
 DZO:
     intervals:
         default:
@@ -89,6 +89,60 @@ DZO:
         provider1:      DZO_Provider1
         viewer:         DZO_Viewer
     timeout_on_wait: 300
+b25h8:
+    intervals:
+        default:
+            accelerator: 720
+            enquiry: [0, 50]
+            tender:  [0, 15]
+        belowThreshold:
+            accelerator: 60
+            enquiry: [0, 60]
+            tender:  [0, 15]
+        openua:
+            accelerator: 720
+            tender:  [0, 70]
+        openeu:
+            accelerator: 720
+            tender:  [0, 61]
+        negotiation:
+            accelerator: 720
+            enquiry: [0, 20]
+            tender:  [0, 20]
+    keywords_file: 25h8
+    roles:
+        tender_owner:   u25h8_Owner
+        provider:       u25h8_Provider
+        provider1:      u25h8_Provider1
+        viewer:         u25h8_Viewer
+    timeout_on_wait: 180
+tenderonline:
+    intervals:
+        default:
+            accelerator: 720
+            enquiry: [0, 50]
+            tender:  [0, 15]
+        belowThreshold:
+            accelerator: 60
+            enquiry: [0, 60]
+            tender:  [0, 15]
+        openua:
+            accelerator: 720
+            tender:  [0, 70]
+        openeu:
+            accelerator: 720
+            tender:  [0, 62]
+        negotiation:
+            accelerator: 720
+            enquiry: [0, 20]
+            tender:  [0, 20]
+    keywords_file: tenderonline
+    roles:
+        tender_owner:   tenderonline_Owner
+        provider:       tenderonline_Provider
+        provider1:      tenderonline_Provider1
+        viewer:         tenderonline_Viewer
+    timeout_on_wait: 180
 ztv:
     intervals:
         default:
@@ -111,12 +165,12 @@ Newtend:
 PrivatMarket:
     intervals:
         default:
-            enquiry: [0, 15]
-            tender:  [0, 15]
+            enquiry: [0, 18]
+            tender:  [0, 18]
     keywords_file: privatmarket
     roles:
         provider:       PrivatMarket_Provider
-        provider1:      PrivatMarket_Provider1
+        tender_owner:   PrivatMarket_Owner
         viewer:         PrivatMarket_Viewer
     timeout_on_wait: 30
 Prom:
@@ -241,3 +295,65 @@ APStender:
             enquiry: [0, 15]
             tender:  [0, 15]
     timeout_on_wait: 10
+alltenders:
+    intervals:
+        default:
+            accelerator: 1440
+            enquiry: [0, 15]
+            tender:  [0, 20]
+        belowThreshold:
+            accelerator: 1440
+            enquiry: [0, 10]
+            tender:  [0, 15]
+        openua:
+            accelerator: 1440
+            tender:  [0, 20]
+        openeu:
+            accelerator: 1440
+            tender:  [0, 30]
+    keywords_file: alltenders
+    homepage: 'https://prozorro.shadowy.eu/?mode=test&notification=off'
+    roles:
+        provider:       alltenders_Provider1
+        provider1:      alltenders_Provider2
+        tender_owner:   alltenders_Owner
+        viewer:         alltenders_Viewer
+    timeout_on_wait: 65
+Kapitalist:
+    intervals:
+        default:
+            enquiry: [0, 15]
+            tender:  [0, 20]
+            accelerator: 1440
+    keywords_file: kapitalist
+    roles:
+        tender_owner:   kapitalist_Owner
+        provider:       kapitalist_Provider
+        provider1:      kapitalist_Provider1
+        viewer:         kapitalist_Viewer
+    timeout_on_wait: 80
+pzo:
+    intervals:
+        default:
+            enquiry: [0, 20]
+            tender:  [0, 20]
+            accelerator: 1440
+        belowThreshold:
+            enquiry: [0, 25]
+            tender:  [0, 25]
+            accelerator: 180
+        openua:
+            tender:  [0, 25]
+            accelerator: 1440
+        openeu:
+            tender:  [0, 25]
+            accelerator: 1440
+    keywords_file: pzo
+    homepage: 'http://dev.pzo.com.ua/tenders'
+    syncpage: 'http://dev.pzo.com.ua/develop/sync?psw=369369'
+    roles:
+        provider:       pzo_Provider1
+        provider1:      pzo_Provider2
+        tender_owner:   pzo_Owner
+        viewer:         pzo_Viewer
+    timeout_on_wait: 1
