@@ -321,6 +321,9 @@ Library         Selenium2Library
 Поставити максимально можливу ставку
   Wait Until Page Contains Element    id=max_bid_amount_price
   ${last_amount}=     Get Text        id=max_bid_amount_price
+  ${last_amount}=  convert_amount_string_to_float  ${last_amount}
+  # ${last_amount}=  Convert to Number   ${last_amount.replace(',', '.')}
+  ${last_amount}=     convert_float_to_int  ${last_amount}
   Поставити ставку   ${last_amount}   Заявку прийнято
 
 

@@ -569,3 +569,6 @@ def convert_amount_string_to_float(amount_string):
 def compare_rationale_types(type1, type2):
     return set(type1) == set(type2)
 
+
+def convert_float_to_int(float_number):
+    return int(float_number)
