@@ -965,3 +965,13 @@ Require Failure
   ${len_of_object}=  Get Length  ${USERS.users['${username}'].tender_data.data.${object}}
   ${index}=  subtraction  ${len_of_object}  1
   [Return]  ${index}
+
+
+Отримати документи
+  [Arguments]  ${file_name}
+  :FOR    ${INDEX}    IN RANGE    1    25
+  \  ${right}=  Get File  ${OUTPUT_DIR}${/}${file_name}
+  \  ${status}=  Run Keyword And Return Status  Should Contain  ${right}  504
+  \  Exit For Loop If  '${status}' == 'False'
+  \  Sleep  10
+  [Return]  ${right}

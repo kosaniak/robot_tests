@@ -482,6 +482,7 @@ ${ITEM_MEAT}        ${True}
   ...      ${USERS.users['${viewer}'].broker}
   ...      add_lot_doc  level2
   ...      critical
+  [Setup]  Дочекатись синхронізації з майданчиком  ${viewer}
   Звірити відображення заголовку документації до всіх лотів для користувача ${viewer}
 
 
@@ -491,6 +492,7 @@ ${ITEM_MEAT}        ${True}
   ...      ${USERS.users['${viewer}'].broker}
   ...      add_tender_doc  level2
   ...      critical
+  [Setup]  Дочекатись синхронізації з майданчиком  ${viewer}
   Звірити відображення вмісту документа ${USERS.users['${tender_owner}'].tender_document.doc_id} із ${USERS.users['${tender_owner}'].tender_document.doc_content} для користувача ${viewer}
 
 
@@ -500,6 +502,7 @@ ${ITEM_MEAT}        ${True}
   ...      ${USERS.users['${viewer}'].broker}
   ...      add_lot_doc  level2
   ...      critical
+  [Setup]  Дочекатись синхронізації з майданчиком  ${viewer}
   Звірити відображення вмісту документації до всіх лотів для користувача ${viewer}
 
 

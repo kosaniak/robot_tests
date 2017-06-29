@@ -72,7 +72,7 @@ Library  openprocurement_client.utils
   Log  ${filepath}
   ${tender}=  openprocurement_client.Пошук тендера по ідентифікатору  ${username}  ${tender_uaid}
   ${tender}=  set_access_key  ${tender}  ${USERS.users['${username}'].access_token}
-  ${reply}=  Call Method  ${USERS.users['${username}'].client}  upload_document  ${filepath}  ${tender}
+  ${reply}=  Wait Until Keyword Succeeds  15x  10 sec  Call Method  ${USERS.users['${username}'].client}  upload_document  ${filepath}  ${tender}
   Log object data   ${reply}  reply
   #return here is needed to have uploaded doc data in `Завантажити документ в лот` keyword
   [return]  ${reply}
