@@ -122,8 +122,11 @@ def get_document_by_id(data, doc_id):
 
 def download_file_from_url(url, path_to_save_file):
     f = open(path_to_save_file, 'wb')
+    print('SSSSSSSS')
     f.write(urllib.urlopen(url).read())
+    print('OOOOOOOO')
     f.close()
+    print('UUUUUUUUU')
     return os.path.basename(f.name)
 
 

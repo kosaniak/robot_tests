@@ -334,7 +334,7 @@ Library  openprocurement_client.utils
   ${lot_id}=  Get Variable Value  ${tender.data.lots[${lot_index}].id}
   ${doc}=  openprocurement_client.Завантажити документ  ${username}  ${filepath}  ${tender_uaid}
   ${lot_doc}=  test_lot_document_data  ${doc}  ${lot_id}
-  ${reply}=  Call Method  ${USERS.users['${username}'].client}  patch_document   ${tender}   ${lot_doc}
+  ${reply}=  Wait Until Keyword Succeeds  15x  10 sec  Call Method  ${USERS.users['${username}'].client}  patch_document   ${tender}   ${lot_doc}
 
 
 Видалити лот
@@ -636,7 +636,7 @@ Library  openprocurement_client.utils
   Log  ${USERS.users['${username}'].complaint_access_token}
   ${tender}=  set_access_key  ${tender}  ${USERS.users['${username}'].complaint_access_token}
   ${complaint_internal_id}=  openprocurement_client.Отримати internal id по UAid для скарги  ${tender}  ${complaintID}
-  ${reply}=  Call Method  ${USERS.users['${username}'].client}  upload_award_complaint_document  ${document}  ${tender}  ${tender.data.awards[${award_index}].id}  ${complaint_internal_id}
+  ${reply}=  Wait Until Keyword Succeeds  15x  10 sec  Call Method  ${USERS.users['${username}'].client}  upload_award_complaint_document  ${document}  ${tender}  ${tender.data.awards[${award_index}].id}  ${complaint_internal_id}
   Log  ${tender}
   Log  ${reply}
 
@@ -872,7 +872,7 @@ Library  openprocurement_client.utils
   ${bid_id}=  Get Variable Value   ${USERS.users['${username}'].bidresponses['bid'].data.id}
   ${tender}=  openprocurement_client.Пошук тендера по ідентифікатору  ${username}  ${tender_uaid}
   ${tender}=  set_access_key  ${tender}  ${USERS.users['${username}']['access_token']}
-  ${response}=  Call Method  ${USERS.users['${username}'].client}  upload_bid_document  ${path}  ${tender}  ${bid_id}  ${doc_type}
+  ${response}=  Wait Until Keyword Succeeds  15x  10 sec  Call Method  ${USERS.users['${username}'].client}  upload_bid_document  ${path}  ${tender}  ${bid_id}  ${doc_type}
   ${uploaded_file} =  Create Dictionary
   ...      filepath=${path}
   ...      upload_response=${response}
@@ -887,7 +887,7 @@ Library  openprocurement_client.utils
   ${tender}=  set_access_key  ${tender}  ${USERS.users['${username}']['access_token']}
   ${bid}=  openprocurement_client.Отримати пропозицію  ${username}  ${tender_uaid}
   ${bid_doc}=  get_document_by_id  ${bid.data}  ${doc_id}
-  ${response}=  Call Method  ${USERS.users['${username}'].client}  update_bid_document  ${path}  ${tender}  ${bid_id}  ${bid_doc['id']}  ${doc_type}
+  ${response}=  Wait Until Keyword Succeeds  15x  10 sec  Call Method  ${USERS.users['${username}'].client}  update_bid_document  ${path}  ${tender}  ${bid_id}  ${bid_doc['id']}  ${doc_type}
   ${uploaded_file} =  Create Dictionary
   ...      filepath=${path}
   ...      upload_response=${response}
@@ -902,7 +902,7 @@ Library  openprocurement_client.utils
   ${tender}=  set_access_key  ${tender}  ${USERS.users['${username}']['access_token']}
   ${bid}=  openprocurement_client.Отримати пропозицію  ${username}  ${tender_uaid}
   ${bid_doc}=  get_document_by_id  ${bid.data}  ${doc_id}
-  ${reply}=  Call Method  ${USERS.users['${username}'].client}  patch_bid_document   ${tender}   ${doc_data}   ${bid_id}   ${bid_doc['id']}
+  ${reply}=  Wait Until Keyword Succeeds  15x  10 sec  Call Method  ${USERS.users['${username}'].client}  patch_bid_document   ${tender}   ${doc_data}   ${bid_id}   ${bid_doc['id']}
 
 
 Отримати пропозицію
@@ -933,7 +933,7 @@ Library  openprocurement_client.utils
   ...       [Return] Reply from API
   [Arguments]  ${username}  ${tender_uaid}  ${qualification_id}
   ${tender}=  openprocurement_client.Пошук тендера по ідентифікатору  ${username}  ${tender_uaid}
-  ${doc_list}=  Call Method  ${USERS.users['${username}'].client}  get_qualification_documents  ${tender}  ${qualification_id}
+  ${doc_list}=  Wait Until Keyword Succeeds  15x  10 sec  Call Method  ${USERS.users['${username}'].client}  get_qualification_documents  ${tender}  ${qualification_id}
   Log  ${doc_list}
   [Return]  ${doc_list}
 
@@ -945,7 +945,7 @@ Library  openprocurement_client.utils
   ...       [Return] Reply from API
   [Arguments]  ${username}  ${tender_uaid}  ${award_id}
   ${tender}=  openprocurement_client.Пошук тендера по ідентифікатору  ${username}  ${tender_uaid}
-  ${doc_list}=  Call Method  ${USERS.users['${username}'].client}  get_awards_documents  ${tender}  ${award_id}
+  ${doc_list}=  Wait Until Keyword Succeeds  15x  10 sec  Call Method  ${USERS.users['${username}'].client}  get_awards_documents  ${tender}  ${award_id}
   Log  ${doc_list}
   [Return]  ${doc_list}
 
@@ -985,7 +985,7 @@ Library  openprocurement_client.utils
   ...      [Return] Reply of API
   [Arguments]  ${username}  ${document}  ${tender_uaid}  ${award_num}
   ${tender}=  openprocurement_client.Пошук тендера по ідентифікатору  ${username}  ${tender_uaid}
-  ${doc}=  Call Method  ${USERS.users['${username}'].client}  upload_award_document  ${document}  ${tender}  ${tender.data.awards[${award_num}].id}
+  ${doc}=  Wait Until Keyword Succeeds  15x  10 sec  Call Method  ${USERS.users['${username}'].client}  upload_award_document  ${document}  ${tender}  ${tender.data.awards[${award_num}].id}
   Log  ${doc}
 
 
@@ -1080,7 +1080,7 @@ Library  openprocurement_client.utils
   ...      [Return] ID of added document
   [Arguments]  ${username}  ${tender_uaid}  ${cancellation_id}  ${document}
   ${tender}=  openprocurement_client.Пошук тендера по ідентифікатору  ${username}  ${tender_uaid}
-  ${doc_reply}=  Call Method  ${USERS.users['${username}'].client}  upload_cancellation_document  ${document}  ${tender}  ${cancellation_id}
+  ${doc_reply}=  Wait Until Keyword Succeeds  15x  10 sec  Call Method  ${USERS.users['${username}'].client}  upload_cancellation_document  ${document}  ${tender}  ${cancellation_id}
   Log  ${doc_reply}
   [Return]  ${doc_reply.data.id}
 
@@ -1096,7 +1096,7 @@ Library  openprocurement_client.utils
   ${tender}=  openprocurement_client.Пошук тендера по ідентифікатору  ${username}  ${tender_uaid}
   ${temp}=  Create Dictionary  ${field}=${new_description}
   ${data}=  Create Dictionary  data=${temp}
-  ${reply}=  Call Method  ${USERS.users['${username}'].client}  patch_cancellation_document  ${tender}  ${data}  ${cancellation_id}  ${document_id}
+  ${reply}=  Wait Until Keyword Succeeds  15x  10 sec  Call Method  ${USERS.users['${username}'].client}  patch_cancellation_document  ${tender}  ${data}  ${cancellation_id}  ${document_id}
   Log  ${reply}
 
 
@@ -1165,7 +1165,7 @@ Library  openprocurement_client.utils
   ...      [Return] Reply of API
   [Arguments]  ${username}  ${document}  ${tender_uaid}  ${qualification_num}
   ${tender}=  openprocurement_client.Пошук тендера по ідентифікатору  ${username}  ${tender_uaid}
-  ${doc_reply}=  Call Method  ${USERS.users['${username}'].client}  upload_qualification_document  ${document}  ${tender}  ${tender.data.qualifications[${qualification_num}].id}
+  ${doc_reply}=  Wait Until Keyword Succeeds  15x  10 sec  Call Method  ${USERS.users['${username}'].client}  upload_qualification_document  ${document}  ${tender}  ${tender.data.qualifications[${qualification_num}].id}
   Log  ${doc_reply}
 
 
@@ -1268,7 +1268,7 @@ Library  openprocurement_client.utils
   ${tender}=  openprocurement_client.Пошук тендера по ідентифікатору  ${username}  ${tender_uaid}
   ${contract_id}=  Get Variable Value  ${tender.data.contracts[${contract_index}].id}
   ${tender}=  set_access_key  ${tender}  ${USERS.users['${username}']['access_token']}
-  ${response}=  Call Method  ${USERS.users['${username}'].client}  upload_contract_document  ${path}  ${tender}  ${contract_id}  ${doc_type}
+  ${response}=  Wait Until Keyword Succeeds  15x  10 sec  Call Method  ${USERS.users['${username}'].client}  upload_contract_document  ${path}  ${tender}  ${contract_id}  ${doc_type}
   ${uploaded_file} =  Create Dictionary
   ...      filepath=${path}
   ...      upload_response=${response}
@@ -1349,7 +1349,7 @@ Library  openprocurement_client.utils
   ${contract}=  set_access_key  ${contract}  ${USERS.users['${username}'].contract_access_token}
   ${reply_doc_create}=  Call Method  ${USERS.users['${username}'].contracting_client}  upload_document  ${document}  ${contract}
   ${change_document}=  test_change_document_data  ${reply_doc_create}  ${USERS.users['${username}'].changes[0].data.id}
-  ${reply_doc_patch}=  Call Method  ${USERS.users['${username}'].contracting_client}  patch_document  ${contract}  ${change_document}
+  ${reply_doc_patch}=  Wait Until Keyword Succeeds  15x  10 sec  Call Method  ${USERS.users['${username}'].contracting_client}  patch_document  ${contract}  ${change_document}
   Log  ${reply_doc_create}
   Log  ${reply_doc_patch}
 
