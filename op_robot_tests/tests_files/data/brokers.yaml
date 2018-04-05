@@ -50,16 +50,16 @@ Quinta:
     intervals:
         default:
             enquiry: [0, 20]
-            tender:  [0, 20]
+            tender:  [0, 15]
         openua:
-            tender:  [1, 30]
+            tender:  [1, 43200]
         openeu:
-            tender:  [1, 35]
+            tender:  [1, 43200]
         openua_defense:
-            tender:  [0, 30]
+            tender:  [0, 43200]
         open_competitive_dialogue:
             accelerator: 1440
-            tender:  [0, 30]
+            tender:  [0, 43200]
     keywords_file: openprocurement_client
     roles:
         provider:       Tender_User
