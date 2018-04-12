@@ -821,8 +821,7 @@ Resource           resource.robot
   ...      ${cancellation_data}
   Set To Dictionary  ${USERS.users['${provider}'].tender_claim_data}  cancellation  ${cancellation_data}
   Wait until keyword succeeds
-  ...      40 min 15 sec
-  ...      15 sec
+  ...      200 x  30 min
   ...      Звірити статус вимоги/скарги
   ...      ${provider}
   ...      ${TENDER['TENDER_UAID']}
@@ -844,8 +843,7 @@ Resource           resource.robot
   ...      ${cancellation_data}
   Set To Dictionary  ${USERS.users['${provider}'].lot_claim_data}  cancellation  ${cancellation_data}
   Wait until keyword succeeds
-  ...      40 min 15 sec
-  ...      15 sec
+  ...      200 x  30 min
   ...      Звірити статус вимоги/скарги
   ...      ${provider}
   ...      ${TENDER['TENDER_UAID']}
@@ -869,8 +867,7 @@ Resource           resource.robot
   ...      ${award_index}
   Set To Dictionary  ${USERS.users['${provider}'].claim_data}  cancellation  ${cancellation_data}
   Wait until keyword succeeds
-  ...      40 min 15 sec
-  ...      15 sec
+  ...      200 x  30 min
   ...      Звірити статус вимоги/скарги
   ...      ${provider}
   ...      ${TENDER['TENDER_UAID']}
@@ -892,8 +889,7 @@ Resource           resource.robot
   ...      ${escalation_data}
   Set To Dictionary  ${USERS.users['${provider}'].tender_claim_data}  escalation  ${escalation_data}
   Wait until keyword succeeds
-  ...      40 min 15 sec
-  ...      15 sec
+  ...      200 x  30 min
   ...      Звірити статус вимоги/скарги
   ...      ${provider}
   ...      ${TENDER['TENDER_UAID']}
@@ -914,8 +910,7 @@ Resource           resource.robot
   ...      ${escalation_data}
   Set To Dictionary  ${USERS.users['${provider}'].lot_claim_data}  escalation  ${escalation_data}
   Wait until keyword succeeds
-  ...      40 min 15 sec
-  ...      15 sec
+  ...      200 x  30 min
   ...      Звірити статус вимоги/скарги
   ...      ${provider}
   ...      ${TENDER['TENDER_UAID']}
@@ -937,8 +932,7 @@ Resource           resource.robot
   ...      ${award_index}
   Set To Dictionary  ${USERS.users['${provider}'].claim_data}  escalation  ${escalation_data}
   Wait until keyword succeeds
-  ...      40 min 15 sec
-  ...      15 sec
+  ...      200 x  30 min
   ...      Звірити статус вимоги/скарги
   ...      ${provider}
   ...      ${TENDER['TENDER_UAID']}
@@ -992,8 +986,7 @@ Resource           resource.robot
   ...       ELSE
   ...       Set To Dictionary  ${USERS.users['${tender_owner}']}  lot_claim_data  ${claim_data}
   Wait until keyword succeeds
-  ...      40 min 15 sec
-  ...      15 sec
+  ...      200 x  30 min
   ...      Звірити статус вимоги/скарги
   ...      ${provider}
   ...      ${TENDER['TENDER_UAID']}
@@ -1014,8 +1007,7 @@ Resource           resource.robot
   ${claim_data}=  munch_dict  arg=${claim_data}
   Set To Dictionary  ${USERS.users['${tender_owner}']}  claim_data  ${claim_data}
   Wait until keyword succeeds
-  ...      40 min 15 sec
-  ...      15 sec
+  ...      200 x  30 min
   ...      Звірити статус вимоги/скарги
   ...      ${provider}
   ...      ${TENDER['TENDER_UAID']}
@@ -1036,8 +1028,7 @@ Resource           resource.robot
   ...      ${confirmation_data}
   Set To Dictionary  ${USERS.users['${provider}']['tender_claim_data']}  claim_answer_confirm  ${confirmation_data}
   Wait until keyword succeeds
-  ...      40 min 15 sec
-  ...      15 sec
+  ...      200 x  30 min
   ...      Звірити статус вимоги/скарги
   ...      ${provider}
   ...      ${TENDER['TENDER_UAID']}
@@ -1057,8 +1048,7 @@ Resource           resource.robot
   ...      ${confirmation_data}
   Set To Dictionary  ${USERS.users['${provider}']['tender_claim_data']}  claim_answer_confirm  ${confirmation_data}
   Wait until keyword succeeds
-  ...      40 min 15 sec
-  ...      15 sec
+  ...      200 x  30 min
   ...      Звірити статус вимоги/скарги
   ...      ${provider}
   ...      ${TENDER['TENDER_UAID']}
@@ -1078,8 +1068,7 @@ Resource           resource.robot
   ...      ${confirmation_data}
   Set To Dictionary  ${USERS.users['${provider}']['lot_claim_data']}  claim_answer_confirm  ${confirmation_data}
   Wait until keyword succeeds
-  ...      40 min 15 sec
-  ...      15 sec
+  ...      200 x  30 min
   ...      Звірити статус вимоги/скарги
   ...      ${provider}
   ...      ${TENDER['TENDER_UAID']}
@@ -1100,8 +1089,7 @@ Resource           resource.robot
   ...      ${award_index}
   Set To Dictionary  ${USERS.users['${provider}']['claim_data']}  claim_answer_confirm  ${confirmation_data}
   Wait until keyword succeeds
-  ...      40 min 15 sec
-  ...      15 sec
+  ...      200 x  30 min
   ...      Звірити статус вимоги/скарги
   ...      ${provider}
   ...      ${TENDER['TENDER_UAID']}
