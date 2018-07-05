@@ -791,7 +791,7 @@ Require Failure
   Дочекатись синхронізації з майданчиком  ${username}
   ${next_status}=  Set variable if  'open' in '${MODE}'  active.tendering  active.enquiries
   Wait until keyword succeeds
-  ...      5 min 15 sec
+  ...      9000 min 15 sec
   ...      15 sec
   ...      Звірити статус тендера
   ...      ${username}
@@ -805,7 +805,7 @@ Require Failure
   Оновити LAST_MODIFICATION_DATE
   Дочекатись синхронізації з майданчиком  ${username}
   Wait until keyword succeeds
-  ...      10 min 15 sec
+  ...      9000 min 15 sec
   ...      15 sec
   ...      Звірити статус тендера
   ...      ${username}
@@ -855,7 +855,7 @@ Require Failure
   Оновити LAST_MODIFICATION_DATE
   Дочекатись синхронізації з майданчиком  ${username}
   Wait until keyword succeeds
-  ...      30 min 15 sec
+  ...      9000 min 15 sec
   ...      15 sec
   ...      Звірити статус тендера
   ...      ${username}
@@ -877,7 +877,7 @@ Require Failure
   Оновити LAST_MODIFICATION_DATE
   Дочекатись синхронізації з майданчиком  ${username}
   Wait until keyword succeeds
-  ...      40 min 15 sec
+  ...      9000 min 15 sec
   ...      15 sec
   ...      Run Keyword And Expect Error  *
   ...      Звірити статус тендера
@@ -900,7 +900,7 @@ Require Failure
   Оновити LAST_MODIFICATION_DATE
   Дочекатись синхронізації з майданчиком  ${username}
   Wait until keyword succeeds
-  ...      20 min 15 sec
+  ...      9000 min 15 sec
   ...      15 sec
   ...      Звірити статус тендера
   ...      ${username}
@@ -922,7 +922,7 @@ Require Failure
   Оновити LAST_MODIFICATION_DATE
   Дочекатись синхронізації з майданчиком  ${username}
   Wait until keyword succeeds
-  ...      5 min 15 sec
+  ...      9000 min 15 sec
   ...      15 sec
   ...      Звірити статус тендера
   ...      ${username}
@@ -936,7 +936,7 @@ Require Failure
   Оновити LAST_MODIFICATION_DATE
   Дочекатись синхронізації з майданчиком  ${username}
   Wait until keyword succeeds
-  ...      5 min 15 sec
+  ...      9000 min 15 sec
   ...      15 sec
   ...      Run Keyword And Expect Error  *
   ...      Звірити статус тендера
@@ -950,7 +950,7 @@ Require Failure
   Оновити LAST_MODIFICATION_DATE
   Дочекатись синхронізації з майданчиком  ${username}
   Wait until keyword succeeds
-  ...      10 min 15 sec
+  ...      9000 min 15 sec
   ...      15 sec
   ...      Звірити статус тендера
   ...      ${username}
@@ -963,7 +963,7 @@ Require Failure
   Оновити LAST_MODIFICATION_DATE
   Дочекатись синхронізації з майданчиком  ${username}
   Wait until keyword succeeds
-  ...      40 min 15 sec
+  ...      9000 min 15 sec
   ...      15 sec
   ...      Звірити статус тендера
   ...      ${username}
@@ -977,7 +977,7 @@ Require Failure
   Оновити LAST_MODIFICATION_DATE
   Дочекатись синхронізації з майданчиком  ${username}
   Wait until keyword succeeds
-  ...      40 min 15 sec
+  ...      9000 min 15 sec
   ...      15 sec
   ...      Звірити статус тендера
   ...      ${username}
@@ -996,7 +996,7 @@ Require Failure
   [Arguments]  ${username}  ${status}  ${complaintID}  ${award_index}=${None}
   Дочекатись синхронізації з майданчиком  ${username}
   Wait until keyword succeeds
-  ...      40 min 15 sec
+  ...      9000 min 15 sec
   ...      15 sec
   ...      Звірити статус вимоги/скарги
   ...      ${provider}
