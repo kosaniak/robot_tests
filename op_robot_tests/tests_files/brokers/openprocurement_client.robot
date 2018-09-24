@@ -11,6 +11,7 @@ Library  openprocurement_client.utils
   Set To Dictionary  ${tender.data}  status=active.tendering
   ${tender}=  set_access_key  ${tender}  ${USERS.users['${username}'].access_token}
   ${tender}=  Call Method  ${USERS.users['${username}'].client}  patch_tender  ${tender}
+  Log  ${\n}${API_HOST_URL}/api/${API_VERSION}/${resource}/${tender.data.id}${\n}  WARN
   Log  ${tender}
 
 

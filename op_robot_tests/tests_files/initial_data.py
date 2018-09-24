@@ -196,7 +196,7 @@ def test_tender_data(params, periods=("enquiry", "tender")):
 
     data = {
         "mode": "test",
-        "submissionMethodDetails": "quick",
+        #"submissionMethodDetails": "quick",
         "description": fake.description(),
         "description_en": fake_en.sentence(nb_words=10, variable_nb_words=True),
         "description_ru": fake_ru.sentence(nb_words=10, variable_nb_words=True),
@@ -222,8 +222,8 @@ def test_tender_data(params, periods=("enquiry", "tender")):
     }
 
     accelerator = params['intervals']['accelerator']
-    data['procurementMethodDetails'] = 'quick, ' \
-        'accelerator={}'.format(accelerator)
+    #data['procurementMethodDetails'] = 'quick, ' \
+    #    'accelerator={}'.format(accelerator)
 
     data["procuringEntity"]["kind"] = "other"
 
@@ -246,7 +246,7 @@ def test_tender_data(params, periods=("enquiry", "tender")):
     for period_name in periods:
         period_dict[period_name + "Period"] = {}
         for i, j in zip(range(2), ("start", "end")):
-            inc_dt += timedelta(minutes=params['intervals'][period_name][i])
+            inc_dt += timedelta(days=params['intervals'][period_name][i])
             period_dict[period_name + "Period"][j + "Date"] = inc_dt.isoformat()
     data.update(period_dict)
 
@@ -294,8 +294,8 @@ def test_lot_data(params):
         "mode": "test"
     }
     accelerator = params['intervals']['accelerator']
-    lot_data['sandboxParameters'] = 'quick, ' \
-    'accelerator={}'.format(accelerator)
+    #lot_data['sandboxParameters'] = 'quick, ' \
+   # 'accelerator={}'.format(accelerator)
     return munchify(lot_data)
 
 
@@ -314,15 +314,15 @@ def test_lot_auctions_data(index, procedure_intervals, params):
     period_dict = {}
     inc_dt = get_now()
     period_dict["auctionPeriod"] = {}
-    inc_dt += timedelta(minutes=tender_parameters['intervals']['auction'][0])
+    inc_dt += timedelta(days=tender_parameters['intervals']['auction'][0])
     accelerator = tender_parameters['intervals']['accelerator']
     scheme = random.choice([u'UA-EDR', u'UA-MFO', u'accountNumber'])
     scheme_id = create_fake_scheme_id(scheme)
     if index == '0':
         value_amount = create_fake_amount(3000, 999999999.99)
         lot_data = {
-            "procurementMethodDetails": 'quick, ' 'accelerator={}'.format(accelerator),
-            "submissionMethodDetails": "quick",
+            #"procurementMethodDetails": 'quick, ' 'accelerator={}'.format(accelerator),
+            #"submissionMethodDetails": "quick",
             "value": {
                 "amount": value_amount,
                 "currency": u"UAH",
@@ -357,8 +357,8 @@ def test_lot_auctions_data(index, procedure_intervals, params):
     else:
         lot_data = {
             "tenderingDuration": 'P1M',
-            "procurementMethodDetails": 'quick, ' 'accelerator={}'.format(accelerator),
-            "submissionMethodDetails": "quick"
+            #"procurementMethodDetails": 'quick, ' 'accelerator={}'.format(accelerator),
+            #"submissionMethodDetails": "quick"
         }
     return munchify(lot_data)
 
@@ -465,7 +465,7 @@ def test_tender_data_dgf_other(params):
     period_dict = {}
     inc_dt = get_now()
     period_dict["auctionPeriod"] = {}
-    inc_dt += timedelta(minutes=params['intervals']['auction'][0])
+    inc_dt += timedelta(days=params['intervals']['auction'][0])
     period_dict["auctionPeriod"]["startDate"] = inc_dt.isoformat()
     data.update(period_dict)
 
