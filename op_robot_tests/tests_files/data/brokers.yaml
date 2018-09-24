@@ -34,7 +34,7 @@ Default:
             # (it is set automatically)
         dgfOtherAssets:
             accelerator: 1440
-            auction:  [25, 30]
+            auction:  [5, 30]
         lots:
             accelerator: 720
         auctions:
