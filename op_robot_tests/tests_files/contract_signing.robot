@@ -21,6 +21,17 @@ ${MODE}  auctions
 #             CONTRACT
 ##############################################################################################
 
+Можливість завантажити документ до контракту
+  [Tags]  ${USERS.users['${tender_owner}'].broker}: Завантаження документів щодо угоди
+  ...  tender_owner
+  ...  ${USERS.users['${tender_owner}'].broker}
+  ...  contract_sign_upload
+  [Teardown]  Оновити LMD і дочекатись синхронізації  ${tender_owner}
+  ${file_path}  ${file_title}  ${file_content}=  create_fake_doc
+  Run As  ${tender_owner}  Завантажити документ в контракт  ${TENDER['TENDER_UAID']}  -1  ${file_path}
+  Remove File  ${file_path}
+
+
 Можливість завантажити угоду до лоту
   [Tags]  ${USERS.users['${tender_owner}'].broker}: Завантаження документів щодо угоди
   ...  tender_owner
